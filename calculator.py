@@ -40,9 +40,9 @@ def div1(num1, num2):
 
 @app.route('/calc/mul/<int:num1>/<int:num2>', methods=['GET'])
 def mul1(num1, num2):
-    result = mul(num1, num2)
+    result = multiply(num1, num2)
     return jsonify({"result": result})
 
-if _name_ == '__main__':
+if __name__ == '__main__':
 
     app.run(debug=True)
