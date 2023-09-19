@@ -14,7 +14,7 @@ def sub(x,y):
     return x-y
 
 # Define routes for your calculator functions
-@app.route('calc/sub/<int:num1>/<int:num2>', methods=['GET'])
+@app.route('/calc/sub/<int:num1>/<int:num2>', methods=['GET'])
 def sub1(num1, num2):
     result = sub(num1, num2)
     return jsonify({"result": result})
